@@ -1,0 +1,16 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:balazsorban44/test-project.git",
+  "author": "Balázs Orbán <info@balazsorban.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/index.js -o index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  }
+}
