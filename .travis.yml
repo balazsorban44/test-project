@@ -6,6 +6,7 @@ cache:
   - node_modules
 install:
 - yarn
+- yarn global add https://github.com/ebidel/lighthouse-ci
 script:
 - yarn build
 after_success:
