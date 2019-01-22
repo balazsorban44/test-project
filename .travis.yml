@@ -10,4 +10,4 @@ install:
 script:
 - yarn build
 after_success:
-  - yarn lh https://ecatch-kyst.firebaseapp.com --pwa=100
+  - yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
