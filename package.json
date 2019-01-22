@@ -6,7 +6,8 @@
   "author": "Balázs Orbán <info@balazsorban.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src/index.js -o index.js"
+    "build": "babel src/index.js -o index.js",
+    "lh": "lighthouse-ci"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
