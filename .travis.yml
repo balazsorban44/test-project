@@ -6,7 +6,8 @@ cache:
   - node_modules
 install:
 - yarn
+- yarn global add https://github.com/ebidel/lighthouse-ci
 script:
 - yarn build
 after_success:
-  - yarn lh https://ecatch-kyst.firebaseapp.com --pwa=1
+  - yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
