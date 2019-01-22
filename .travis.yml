@@ -11,6 +11,4 @@ script:
 - yarn build
 after_success:
   - yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
-  on:
-    all_branches: true
-    condition: $TRAVIS_PULL_REQUEST != false
+  if: type = pull_request
