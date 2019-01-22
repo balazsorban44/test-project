@@ -10,4 +10,4 @@ install:
 script:
 - yarn build
 after_success:
-  - if [ $TRAVIS_PULL_REQUEST ]; then yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com; else echo "No need to run Lighthouse"; fi
+  - [[ $TRAVIS_PULL_REQEST != false ]] && yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
