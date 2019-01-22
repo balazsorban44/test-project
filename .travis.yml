@@ -10,5 +10,4 @@ install:
 script:
 - yarn build
 after_success:
-  - echo > $TRAVIS_PULL_REQUEST
-  - $TRAVIS_PULL_REQUEST != false && yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
+  - $TRAVIS_PULL_REQUEST != "false" && yarn lh --pwa=100 --perf=100 https://ecatch-kyst.firebaseapp.com
